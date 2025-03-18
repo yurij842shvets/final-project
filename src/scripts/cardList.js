@@ -1,3 +1,6 @@
+import cardListTemplate from '../templates/cards.hbs';
+import { eventsService } from './eventsService';
+
 const cardsContainer = document.getElementById('cardsWrapper');
 
 function getPreparedCards(cards) {
@@ -10,4 +13,12 @@ function getPreparedCards(cards) {
       country: card._embedded?.venues[0]?.country?.name,
     };
   });
+}
+export async function renderCardList() {
+  const cards = await eventsService.getEvents();
+  const prepareCards = getPreparedCards(cards);
+  const html = cardListTemplate({
+    cards: prepareCards,
+  });
+  cardsContainer.innerHTML = html;
 }
