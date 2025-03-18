@@ -14,6 +14,7 @@ function getPreparedCards(cards) {
     };
   });
 }
+
 export async function renderCardList() {
   const cards = await eventsService.getEvents();
   const prepareCards = getPreparedCards(cards);
@@ -21,4 +22,18 @@ export async function renderCardList() {
     cards: prepareCards,
   });
   cardsContainer.innerHTML = html;
+}
+
+export async function updateCardList(filters = {}) {
+  if ('keywords' in filters) {
+    eventsService.setSearchKeyword(filters.keywords);
+  }
+  if ('countryCode' in filters) {
+    eventsService.setCountryCode(filters.countryCode);
+  }
+  if ('page' in filters) {
+    eventsService.setPage(filters.page);
+  }
+
+  await renderCardList();
 }
