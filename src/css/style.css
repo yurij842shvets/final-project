@@ -4,9 +4,10 @@
     box-sizing: border-box;
     background-color: black;
 }
-
-.imgCard{
-    
+.card{
+    padding-top: 5px;
+    border: 1px;
+    border-color: red;
 }
 
 .discriptionCard{
@@ -16,6 +17,8 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    padding-top: 5px;
+
 }
 
 .dateCard{
@@ -25,6 +28,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    padding-top: 5px;
 }
 
 .locationCard{
@@ -34,4 +38,50 @@
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    padding-left: 3px;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.container{
+    padding-top: 50px;
+    background-color: #1A1A1A;
+}
+
+ul{
+    display: flex;
+}
+
+
+
+
+.post>ul>li{
+    color: white;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+
+
+.copyrait{
+    color: #939393;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 50px;
 }
