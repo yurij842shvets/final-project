@@ -1,0 +1,18 @@
+content{
+position: absolute;
+top :50%;
+left: 50%;
+transform: translate(-50%, -50%);
+/* width: ; */
+background: red(0,0,0,.8);
+padding: 50px;
+text-align: center;
+color: white;
+border-radius: 20px;
+z-index: 1;
+}
+container{
+    /* width: ;
+    height: ; */
+    border-image: fill 0 linear-gradient(90deg, red, black);
+}
