@@ -35,3 +35,4 @@ class EventsService {
       });
     }
 }
+console.log('EventsService.js loaded');
