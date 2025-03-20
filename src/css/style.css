@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -69,36 +69,35 @@ select {
   background-image: url('../img/polygon.svg');
 }
 
-.card{
+.card {
   padding-top: 5px;
   border: 1px;
   border-color: red;
 }
-.discriptionCard{
-  color: #DC56C5;
+.discriptionCard {
+  color: #dc56c5;
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   padding-top: 5px;
-
 }
 
-.dateCard{
+.dateCard {
   color: white;
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   padding-top: 5px;
 }
 
-.locationCard{
+.locationCard {
   color: white;
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -107,19 +106,19 @@ select {
 
 /* FOOTER */
 
-.container{
+.container {
   padding-top: 50px;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
 }
 
-ul{
+ul {
   display: flex;
 }
 
-.post>ul>li{
+.post > ul > li {
   color: white;
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -127,11 +126,10 @@ ul{
   padding-left: 15px;
 }
 
-
-.copyrait{
+.copyright {
   color: #939393;
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
