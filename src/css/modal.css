@@ -17,7 +17,7 @@ container{ */
     /* border-image: fill 0 linear-gradient(90deg, red, black);
 } */
 
-.container {
+/* .container {
     width: 930px;
     height: 1023px;
     top: 201px;
@@ -35,7 +35,7 @@ container{ */
     height: 22px;
     background-color: #4C00FE;
     transform: rotate(45deg);
-    right: 41%;
+    right: 37%;
 }
 
 .container-cross::after {
@@ -54,3 +54,176 @@ container{ */
     justify-content: center;
     margin: 55px;
 }
+
+.main-img-modal {
+    margin: 40px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #DC56C5;
+}
+
+p {
+    width: 450px;
+    height: 66px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.modal-text {
+    padding: 20px;
+}
+
+.main-img-modal img {
+    border-radius: 10px;
+}
+
+button {
+    width: 145px;
+    height: 40px;
+    color: white;
+    background-color: #4C00FE;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+} */
+
+.container {
+    width: 930px;
+    height: 1023px;
+    border-radius: 280px 0 280px 0;
+    border: 3px solid black;
+    padding: 30px 40px;
+    position: relative;
+}
+
+.container-info {
+    padding-top: 30px;
+}
+
+.container-cross {
+    content: "";
+    position: absolute;
+    top: 4%;
+    width: 2px;
+    height: 22px;
+    background-color: #4C00FE;
+    transform: rotate(45deg);
+    right: 5%;
+}
+
+.container-cross::after {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 22px;
+    background-color: #4C00FE;
+    transform: translate(0px, 0px) rotate(93deg);
+}
+
+.logo-modal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.modal-text {
+    padding: 10px;
+    max-width: 450px;
+}
+
+.description {
+    margin-bottom: 8px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    margin: 5px 0;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #DC56C5;
+    margin-bottom: 10px;
+}
+
+.main-img-modal img {
+    max-width: 360px;
+    border-radius: 10px;
+}
+
+button {
+    width: 145px;
+    height: 40px;
+    color: white;
+    background-color: #4C00FE;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.button-author button {
+    width: 255px;
+    height: 40px;
+    border-radius: 5px;
+    border: #4C00FE solid 1px;
+    color: #4C00FE;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.button-author {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.button-tickets {
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
