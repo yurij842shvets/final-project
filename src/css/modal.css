@@ -78,7 +78,7 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 100%;
+    /* line-height: 100%; */
     margin: 5px 0;
 }
 h2 {
@@ -130,6 +130,18 @@ button {
 .button-tickets {
     margin-bottom: 25px;
 }
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ticket-img {
+    width: 29px;
+    height: 19px;
+}
+
 
 
 
