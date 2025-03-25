@@ -104,6 +104,28 @@ select {
   padding-left: 3px;
 }
 
+/* pagination animation styles */
+
+.page-number {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
+}
+
+.page-number:hover {
+  transform: scale(1.1);
+}
+
+.active {
+  color: #DC56C5;
+  font-weight: bold;
+  border: 1px solid #DC56C5;
+  border-radius: 8px;
+  width: 30px;
+  height: 30px;
+}
+
 /* FOOTER */
 
 .container {
