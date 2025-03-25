@@ -15,8 +15,8 @@ export function renderPagination() {
         await renderCardList();
         window.scrollTo({ top: 0, behavior: 'smooth' });
 
-        $('.paginationjs-page').removeClassList('active');
-        $(`.paginationjs-page[data-num="${pageNumber}"]`).addClassList('active');
+        document.querySelectorAll('.paginationjs-page').forEach(page => page.classList.remove('active'));
+        document.querySelector(`.paginationjs-page[data-num="${pageNumber}"]`)?.classList.add('active');
       },
     });
   });
