@@ -1,5 +1,5 @@
 import cardList from './cardList.js';
-// import eventsService from './eventsservice.js';    error
+import eventsService from './eventsService.js';
 
 export function renderPagination() {
   const { totalPages } = eventsService.getPageData();
