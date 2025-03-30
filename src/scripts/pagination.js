@@ -1,5 +1,5 @@
-import cardList from './cardList.js';
-import eventsService from './eventsService.js';
+import { renderCardList } from './cardList';
+import { eventsService } from './eventsService';
 
 export function renderPagination() {
   const { totalPages } = eventsService.getPageData();
@@ -13,10 +13,8 @@ export function renderPagination() {
         const page = pageNumber - 1;
         eventsService.setPage(page);
         await renderCardList();
+        // scroll to the top of the page
         window.scrollTo({ top: 0, behavior: 'smooth' });
-
-        document.querySelectorAll('.paginationjs-page').forEach(page => page.classList.remove('active'));
-        document.querySelector(`.paginationjs-page[data-num="${pageNumber}"]`)?.classList.add('active');
       },
     });
   });

@@ -15,5 +15,8 @@
     "parcel": "^2.13.3",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^2.0.1"
+  },
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars-precompile": "^1.0.1"
   }
 }

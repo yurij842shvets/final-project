@@ -1,8 +1,8 @@
 {{#each cards}}
-  <div class="card">
-    <img src="" alt="">
-    <p>Eurovision 2021 finals!</p>
-    <p>2021-05-13</p>
-    <p><img src="" alt="">Palace of Ukraine</p>
+  <div class='card' data-id='{{id}}'>
+    <img src='{{imageUrl}}' alt='Event img' ></img>
+    <div class='title'>{{title}}</div>
+    <div class='time'>{{time}}</div>
+    <div class='place'>{{country}}</div>
   </div>
 {{/each}}

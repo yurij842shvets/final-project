@@ -44,8 +44,8 @@ class EventsService {
       .then(data => data);
   }
 
-  setSerchKeyword(keyworld) {
-    this.keyword = keyworld;
+  setSearchKeyword(keyword) {
+    this.keyword = keyword;
     this.page = 0;
   }
 
@@ -53,7 +53,6 @@ class EventsService {
     this.countryCode = countryCode;
     this.page = 0;
   }
-
   setPage(page) {
     this.page = page;
   }
