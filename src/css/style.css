@@ -109,3 +109,9 @@ select {
   font-style: normal;
   padding-left: 3px;
 }
+
+#cardsWrapper{
+  display: grid
+;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
