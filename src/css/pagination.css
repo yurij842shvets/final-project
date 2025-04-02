@@ -1,9 +1,8 @@
-/* pagination styles */
-
 #pagination-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 a {
   text-decoration: none;
@@ -27,7 +26,7 @@ li {
 }
 
 li.active {
-  border-color: var(--text-main);
+  border-color: rgba(220, 86, 197, 1);
 }
 
 @media (max-width: 768px) {
@@ -35,8 +34,6 @@ li.active {
     flex-direction: column;
   }
 }
-
-/* pagination animation styles */
 
 .active {
   color: #dc56c5;
