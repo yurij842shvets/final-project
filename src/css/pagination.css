@@ -60,7 +60,7 @@ li.active {
   animation: paginationTransition 5s ease 1 normal forwards;
 }
 
-@keyframes myAnim {
+@keyframes paginationTransition {
 	0% {
 		opacity: 0;
 		transform: rotateX(-100deg);
