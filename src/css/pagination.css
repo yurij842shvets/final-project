@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  position: relative;
 }
 a {
   text-decoration: none;
@@ -15,6 +15,7 @@ ul {
 }
 
 li {
+  color: white;
   padding: 5px;
   min-width: 30px;
   height: 30px;
@@ -55,18 +56,20 @@ li.active {
   transform: scale(1.1);
 }
 
-#pagination-container {
-  animation: pageTransition 2s ease 0s 1 normal forwards;
+.page-transition {
+  animation: paginationTransition 5s ease 1 normal forwards;
 }
 
-@keyframes pageTransition {
-  0% {
-    transform: scale(1);
-    transform-origin: 100% 50%;
-  }
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: rotateX(-100deg);
+		transform-origin: top;
+	}
 
-  100% {
-    transform: scale(0);
-    transform-origin: 100% 50%;
-  }
+	100% {
+		opacity: 1;
+		transform: rotateX(0deg);
+		transform-origin: top;
+	}
 }

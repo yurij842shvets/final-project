@@ -11,9 +11,17 @@ export function renderPagination() {
       autoHideNext: true,
       callback: async function (_, { pageNumber }) {
         const page = pageNumber - 1;
+
+        const cardsWrapper = document.querySelector('#cardsWrapper');
+        cardsWrapper.classList.add('page-transition');
+
         eventsService.setPage(page);
         await renderCardList();
-        // scroll to the top of the page
+
+        setTimeout(() => {
+          cardsWrapper.classList.remove('page-transition');
+        }, 5000);
+
         window.scrollTo({ top: 0, behavior: 'smooth' });
       },
     });
