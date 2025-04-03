@@ -1,0 +1,22 @@
+{
+  "name": "sem-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "modern-normalize": "^3.0.1",
+    "parcel": "^2.13.3",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^2.0.1"
+  },
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars-precompile": "^1.0.1"
+  }
+}
