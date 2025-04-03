@@ -2,6 +2,7 @@ import modalTemplate from '../templates/modal.hbs';
 import { eventsService } from './eventsService';
 
 const modalContainer = document.getElementById('modalContainer');
+const modalOverlay = document.getElementById('modalOverlay');
 
 function getPreparedCard(data) {
   const preparedData = {
@@ -32,6 +33,9 @@ async function onCardHandler(id) {
     modal: preparedCard,
   });
   modalContainer.innerHTML = html;
+
+  modalOverlay.style.display = 'block';
+  modalContainer.style.display = 'block';
 }
 
 async function onClickHandler(e) {
@@ -39,8 +43,10 @@ async function onClickHandler(e) {
     const card = e.target.closest('.card');
     const id = card.dataset.id;
     onCardHandler(id);
-  } else if (e.target.closest('.modal-close')) {
+  } else if (e.target.closest('.modal-close') || e.target === modalOverlay) {
     modalContainer.innerHTML = '';
+    modalOverlay.style.display = 'none';
+    modalContainer.style.display = 'none';
   }
 }
 
