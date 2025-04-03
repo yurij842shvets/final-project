@@ -1,90 +1,69 @@
-/* content{
-position: absolute;
-top :50%;
-left: 50%;
-transform: translate(-50%, -50%); */
-/* width: ; */
-/* background: red(0,0,0,.8);
-padding: 50px;
-text-align: center;
-color: white;
-border-radius: 20px;
-z-index: 1;
-}
-container{ */
-    /* width: ;
-    height: ; */
-    /* border-image: fill 0 linear-gradient(90deg, red, black);
-} */
-
 .container {
-    /* width: 930px; */
-    height: 1023px;
-    border-radius: 280px 0 280px 0;
-    border: 3px solid black;
-    padding: 30px 40px;
-    position: relative;
-    animation: myAnim 2s ease 0s 1 normal forwards;
+  border-radius: 280px 0 280px 0;
+  border: 3px solid black;
+  padding: 30px 40px;
+  position: relative;
+  animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
 @keyframes myAnim {
-	0%,
-	100% {
-		transform: translateX(0%);
-		transform-origin: 50% 50%;
-	}
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
 
-	15% {
-		transform: translateX(-30px) rotate(6deg);
-	}
+  15% {
+    transform: translateX(-30px) rotate(6deg);
+  }
 
-	30% {
-		transform: translateX(15px) rotate(-6deg);
-	}
+  30% {
+    transform: translateX(15px) rotate(-6deg);
+  }
 
-	45% {
-		transform: translateX(-15px) rotate(3.6deg);
-	}
+  45% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
 
-	60% {
-		transform: translateX(9px) rotate(-2.4deg);
-	}
+  60% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
 
-	75% {
-		transform: translateX(-6px) rotate(1.2deg);
-	}
+  75% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
 }
 
 .modal-container {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .modal-close {
-    content: "";
-    position: absolute;
-    top: 4%;
-    width: 2px;
-    height: 22px;
-    background-color: #4C00FE;
-    transform: rotate(45deg);
-    right: 5%;
+  content: '';
+  position: absolute;
+  top: 4%;
+  width: 2px;
+  height: 22px;
+  background-color: #4c00fe;
+  transform: rotate(45deg);
+  right: 5%;
 }
 
 .modal-close::after {
-    content: "";
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    width: 2px;
-    height: 22px;
-    background-color: #4C00FE;
-    transform: translate(0px, 0px) rotate(93deg);
+  content: '';
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 22px;
+  background-color: #4c00fe;
+  transform: translate(0px, 0px) rotate(93deg);
 }
 
 .logo-modal {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 /* .content-wrapper {
@@ -95,86 +74,78 @@ container{ */
 } */
 
 .block {
-    padding: 10px;
-    max-width: 450px;
+  padding: 10px;
+  max-width: 450px;
 }
 
 .description {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    /* line-height: 100%; */
-    margin: 5px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  /* line-height: 100%; */
+  margin: 5px 0;
 }
 h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    color: #DC56C5;
-    margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #dc56c5;
+  margin-bottom: 10px;
 }
 
 .main-img-modal img {
-    max-width: 360px;
-    border-radius: 10px;
+  max-width: 360px;
+  border-radius: 10px;
 }
 
 button {
-    width: 145px;
-    height: 40px;
-    color: white;
-    background-color: #4C00FE;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-top: 5px;
+  width: 145px;
+  height: 40px;
+  color: white;
+  background-color: #4c00fe;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
 }
 
 .button-author button {
-    width: 255px;
-    height: 40px;
-    border-radius: 5px;
-    border: #4C00FE solid 1px;
-    color: #4C00FE;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
+  width: 255px;
+  height: 40px;
+  border-radius: 5px;
+  border: #4c00fe solid 1px;
+  color: #4c00fe;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
 }
 
 .button-author {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .button-tickets {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .price {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .ticket-img {
-    width: 29px;
-    height: 19px;
+  width: 29px;
+  height: 19px;
 }
-
-
-
-
-
-
-
-
