@@ -20,7 +20,7 @@
   right: -14;
   width: 153px;
   height: 143px;
-  border: 1px solid var(--text-main);
+  border: 1px solid #dc56c5;
   opacity: 0.3;
   border-radius: 30% 0;
 }
@@ -35,21 +35,21 @@ img {
   font-size: 16px;
   line-height: 19.5px;
 
-  color: var(--text-main);
+  color: #dc56c5;
 }
 
 .time {
   font-weight: 400;
   font-size: 16px;
   line-height: 19.5px;
-  color: var(--text-light);
+  color: white;
 }
 
 .place {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  color: var(--text-light);
+  color: white;
 }
 
 @media (max-width: 320px) {
